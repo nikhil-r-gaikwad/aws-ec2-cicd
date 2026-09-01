@@ -28,12 +28,9 @@ jobs:
 
             echo "Installing dependencies..."
             npm install
-            npm start
 
             echo "Restarting application..."
             pm2 restart node-cicd-demo
-            pm2 save
-            pm2 startup
             
 
             echo "Deployment completed!"
